@@ -5,8 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Vercel App</title>
     <link rel="Stylesheet" href="./styles.css"> 
-    <script src="index.js"></script>
     <script src="https://kit.fontawesome.com/662da0114d.js" crossorigin="anonymous"></script>
+    <script src="./index.js"></script>
 </head>
 <body>
     <section id="landing">
@@ -20,25 +20,34 @@
                     <div class="nav__links">
                         <a href="#" class="nav__link">About</a>
                         <a href="#" class="nav__link">Blog</a>
-                        <a href="#" class="nav__link">Pricing</a>
+                        <a href="#pricing" class="nav__link">Pricing</a>
                         <a href="#" class="nav__link">Contact Us</a>
                         <a href="#" class="nav__link login">Login</a>
                         <a href="#" class="nav__link nav__link--primary">Sign Up</a>
-                    </div>
-                    <button class="btn__menu" onclick="openMenu()"></button>
+                <button class="btn__menu" onclick="openMenu()">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+                <div class="menu__backdrop">
+                    <button class="btn__menu btn__menu--close" onclick="closeMenu()">
+                        <i class="fa-solid fa-xmark"></i>
+                    </button>
+                    <ul class="menu__links">
+                            <li class="menu__list"><a href="#about" class="menu__link" onclick="closeMenu()">About</a></li>
+                            <li class="menu__list"><a href="#blog" class="menu__link" onclick="closeMenu()">Blog</a></li>
+                            <li class="menu__list"><a href="#pricing" class="menu__link" onclick="closeMenu()">Pricing</a></li>
+                            <li class="menu__list"><a href="#contact us" class="menu__link" onclick="closeMenu()">Contact Us</a></li>
+                            <li class="menu__list"><a href="#login" class="menu__link" onclick="closeMenu()">Login</a></li>
+                            <li class="menu__list"><a href="#signup" class="menu__link menu__link--primary" onclick="closeMenu()">Sign Up</a></li>
+                        </ul>
                 </div>
             </div>
         </nav>
-        <div class="menu">
-            <button class="btn__menu btn__menu--close" onclick="closeMenu()"></button>
-            <div class="menu__links"></div>
-        </div>
         <header>
             <div class="container">
                 <div class="row">
                     <div class="header__description">
-                        <h1>Beautiful React templates <span class="purple">for you</span></h1>
-                        <p class="header__decription--para">Our template are easy to setup, understand and customize. Fully modular components with a variety of pages and components</p>
+                        <h1>Beautiful React templates <span class="purple">for you.</span></h1>
+                        <p class="header__description--para">Our template are easy to setup, understand and customize. Fully modular components with a variety of pages and components</p>
                         <div class="header__email">
                             <input type="email" class="header__email--input" placeholder="Your E-mail Address">
                             <button class="header__email--btn">Get Started</button>
@@ -187,7 +196,7 @@
                 <div class="row">
                     <div class="values__description">
                         <div class="section__tag">VALUES</div>
-                        <h2 class="section__title">We Always Abide by Our <span class="purple">Principles</span></h2>
+                        <h2 class="section__title">We Always Abide by Our <span class="purple">Principles.</span></h2>
                         <div class="section__para">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</div>
                         <div class="values__list">
                             <div class="value">
@@ -204,7 +213,7 @@
                                     <figure class="value__img--wrapper">
                                         <i class="fa-solid fa-suitcase"></i>
                                     </figure>
-                                    <div class="value__name">Profesionalism</div>
+                                    <div class="value__name">Professionalism</div>
                                 </div>
                                 <div class="value__para">We assure you that our templates are designed and created by professional designers.</div>
                             </div>
@@ -219,7 +228,7 @@
             <div class="container">
                 <div class="row">
                     <div class="section__tag">PRICING</div>
-                    <h2 class="section__title"> Reasonable & flexible <span class="purple">Plans</span></h2>
+                    <h2 class="section__title"> Reasonable & Flexible <span class="purple">Plans</span></h2>
                     <p class="section__para">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                     <div class="plans">
                         <div class="plan">
