@@ -1107,3 +1107,17 @@ footer {
         margin-top: 24px;
     }
 }
+
+@media (max-width: 550px) {
+    .features {
+        max-width: 500px;
+    }
+
+    .feature {
+        width: calc(100%);
+    }
+
+    .footer__column {
+        width: calc(50%);
+    }
+}
